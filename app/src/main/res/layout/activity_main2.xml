@@ -7,164 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
-    <!--
-      <androidx.appcompat.widget.Toolbar
-          android:id="@+id/toolbar"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
 
-          android:elevation="4dp"
-          android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-          android:theme="@style/Theme.AppCompat.Light" />
-       <TableLayout
-              android:visibility="gone"
-              android:layout_width="match_parent"
-              android:id="@+id/table"
-              android:layout_height="wrap_content"
-              android:paddingHorizontal="10dp"
-              android:layout_below="@+id/toolbar">
-
-              <TableRow>
-
-
-                  <TextView
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1"
-                      android:text="Budget"
-                      android:background="@drawable/borders"
-                      android:textColor="#fff"
-                      android:gravity="center"
-                      android:textStyle="bold"
-                      android:padding="5dp"
-                      android:textSize="12sp"/>
-                  <TextView
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1"
-                      android:text="Daily"
-                      android:background="@drawable/borders"
-                      android:textColor="#fff"
-                      android:gravity="center"
-                      android:textStyle="bold"
-                      android:padding="5dp"
-                      android:textSize="12sp"/>
-                  <TextView
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1"
-                      android:background="@drawable/borders"
-                      android:text="Week"
-                      android:textColor="#fff"
-                      android:gravity="center"
-                      android:textStyle="bold"
-                      android:padding="5dp"
-                      android:textSize="12sp"/>
-                  <TextView
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1"
-                      android:text="Month"
-                      android:background="@drawable/borders"
-                      android:textColor="#fff"
-                      android:gravity="center"
-                      android:textStyle="bold"
-                      android:padding="5dp"
-                      android:textSize="12sp"/>
-                  <TextView
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1"
-                      android:text="Saving"
-                      android:background="@drawable/borders"
-                      android:textColor="#fff"
-                      android:gravity="center"
-                      android:textStyle="bold"
-                      android:padding="5dp"
-                      android:textSize="12sp"/>
-
-
-
-              </TableRow>
-              <TableRow>
-
-                  <TextView
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1"
-                      android:text="0"
-                      android:id="@+id/budgetTv"
-                      android:background="@drawable/borders"
-                      android:textColor="#fff"
-                      android:gravity="center"
-                      android:textStyle="bold"
-                      android:padding="5dp"
-                      android:textSize="12sp"/>
-                  <TextView
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1"
-                      android:text="0"
-                      android:id="@+id/todayTv"
-                      android:background="@drawable/borders"
-                      android:textColor="#fff"
-                      android:gravity="center"
-                      android:textStyle="bold"
-                      android:padding="5dp"
-                      android:textSize="12sp"/>
-                  <TextView
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1"
-                      android:background="@drawable/borders"
-                      android:text="0"
-                      android:id="@+id/weekTv"
-                      android:textColor="#fff"
-                      android:gravity="center"
-                      android:textStyle="bold"
-                      android:padding="5dp"
-                      android:textSize="12sp"/>
-                  <TextView
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1"
-                      android:text="0"
-                      android:id="@+id/monthTv"
-                      android:background="@drawable/borders"
-                      android:textColor="#fff"
-                      android:gravity="center"
-                      android:textStyle="bold"
-                      android:padding="5dp"
-                      android:textSize="12sp"/>
-                  <TextView
-                      android:layout_width="0dp"
-                      android:layout_height="wrap_content"
-                      android:layout_weight="1"
-                      android:text="0"
-                      android:id="@+id/savingTv"
-                      android:background="@drawable/borders"
-                      android:textColor="#fff"
-                      android:gravity="center"
-                      android:textStyle="bold"
-                      android:padding="5dp"
-                      android:textSize="12sp"/>
-
-
-
-              </TableRow>
-
-
-
-
-
-
-
-
-
-
-
-          </TableLayout>
-  -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -179,12 +22,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-           <!-- <ImageView
-                android:layout_width="40dp"
-                android:layout_height="50dp"
-                android:src="@drawable/moneybag"
-                android:layout_marginLeft="5dp"></ImageView>
-                -->
+
 
 
             <TextView
@@ -371,22 +209,7 @@
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-        <!--
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="16dp"
-            android:src="@drawable/ic_add"
-            app:fabSize="normal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="297dp" />
-
--->
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
