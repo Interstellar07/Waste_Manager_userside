@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="item name"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/quicksand"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/item"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0$"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/quicksand"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:id="@+id/amount"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="note"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/quicksand"
+                android:textSize="10sp"
+                android:textColor="#000"
+                android:id="@+id/note"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#000"
+                android:fontFamily="@font/quicksand"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textSize="10sp"
+                android:id="@+id/date"/>
+
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:src="@drawable/incoming">
+
+        </ImageView>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

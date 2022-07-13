@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".activities.RegistrationActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:fontFamily="@font/quicksand"
+        android:text="Sign Up"
+        android:textSize="40dp">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/applogo"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/email"
+        android:layout_margin="5dp"
+
+        android:fontFamily="@font/quicksand"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textColorHint="#000"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/password"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:fontFamily="@font/quicksand"
+        android:layout_margin="5dp"
+        android:hint="Enter Password"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textColorHint="#000"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/quicksand"
+        android:text="Sign Up"
+        android:id="@+id/registerbtn"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerQn"
+        android:fontFamily="@font/quicksand"
+        android:textColor="#000"
+        android:text="Already Have Account? Login"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+
+
+
+</LinearLayout>

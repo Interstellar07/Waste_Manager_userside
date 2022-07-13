@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/activitymenu"
+        android:onClick="Activitymet"
+        android:title="Show Report" />
+    <item
+        android:id="@+id/reset"
+        android:onClick="erasedata"
+        android:title="Erase All Data" />
+    <item
+        android:id="@+id/signoutmenu"
+        android:onClick="Signout"
+        android:title="Sign Out" />
+
+
+
+
+
+
+
+</menu>

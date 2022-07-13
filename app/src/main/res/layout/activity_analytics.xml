@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.Analytics">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/quicksand"
+        android:text="Expense Chart Report:"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/amountspenttxt"/>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="5dp"
+
+            android:src="@drawable/moneybag"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="L 50%"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/quicksand"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="5dp"
+
+            android:src="@drawable/moneybag"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="L 50%"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/quicksand"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="5dp"
+
+            android:src="@drawable/moneybag"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="L 50%"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/quicksand"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+
+
+    </LinearLayout> -->
+    <com.anychart.AnyChartView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/chart"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/quicksand"
+        android:text="Expense List: "
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+       />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayouttrasnport"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type: Trasnport"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/analyticstrasnportAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#CD3E3E"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="Month"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bus"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/linearLayout"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayoutFood"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type: Food"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/analyticsFoodAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#CD3E3E"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="Month"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/linearLayout2"
+                    android:src="@drawable/food" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayoutHouse"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout3"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type: House"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/analyticsHouseAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#CD3E3E"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="Month"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/linearLayout3"
+                    android:src="@drawable/home" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayoutApparel"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout7"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type: Apparel"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/analyticsApparelAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#CD3E3E"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="Month"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/clothes"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/linearLayout7"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayoutHealth"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout8"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type: Health"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/analyticsHealthAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#CD3E3E"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="Month"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/heart"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/linearLayout8"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayoutEntertainment"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout4"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type: Entertainment"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/analyticsEntertainmentAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#CD3E3E"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="Month"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/movies"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/linearLayout4"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayoutEducatiob"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type: Education"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/analyticsEducationAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#CD3E3E"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="Month"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/linearLayout5"
+                    android:src="@drawable/mortarboard" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayoutCharity"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout6"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type: Charity"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/analyticsCharityAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#CD3E3E"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="Month"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/charity"
+                    android:layout_margin="10dp"
+                    android:layout_toEndOf="@id/linearLayout6"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayoutPersonal"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout9"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type: Personal"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/analyticsPersonalAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#CD3E3E"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="Month"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/linearLayout9"
+                    android:src="@drawable/miscellaneous" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/relativelayoutsummary"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayoutsummary"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount Spent: "
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/analytictotalAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0"
+                        android:textColor="#CD3E3E"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:text="Month"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/linearLayoutsummary"
+                    android:src="@drawable/expense" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
