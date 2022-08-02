@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -144,13 +143,8 @@ import java.util.Calendar;
         myDialog.setView(myView);
         final AlertDialog dialog = myDialog.create();
         dialog.setCancelable(false);
-
         final Spinner itemSpinner= myView.findViewById(R.id.itemsspinner);
-
-
-
         final EditText note = myView.findViewById(R.id.note);
-
         final EditText amount = myView.findViewById(R.id.amount);
         final Button cancel = myView.findViewById(R.id.cancel);
         final Button save = myView.findViewById(R.id.save);
@@ -178,7 +172,7 @@ import java.util.Calendar;
                     SimpleDateFormat month_date = new SimpleDateFormat("MMMM");
                     String month_name = month_date.format(cal.getTime());
 
-                    MutableDateTime epoch = new MutableDateTime();
+                     MutableDateTime epoch = new MutableDateTime();
                     epoch.setDate(0);
                     DateTime now = new DateTime();
                     Months months = Months.monthsBetween(epoch,now);

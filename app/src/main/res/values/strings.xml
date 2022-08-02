@@ -30,6 +30,18 @@
 
 
     </string-array>
+    <string-array name="Months">
+        <item>Select Month</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+
+
+
+
+
+    </string-array>
     <string-array name="type">
         <item>Select Type</item>
         <item>Income</item>

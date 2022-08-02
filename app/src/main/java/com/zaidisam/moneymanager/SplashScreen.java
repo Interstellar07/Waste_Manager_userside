@@ -28,19 +28,16 @@ public class SplashScreen extends AppCompatActivity {
         FirebaseUser user = mAuth.getCurrentUser();
         if (user == null) {
             new Handler().postDelayed(() -> {
-
-
                 startActivity(new Intent(SplashScreen.this, LoginActivity.class));
                 finish();
-            }, 3200);
+            }, 00);
         }
         else {
             new Handler().postDelayed(() -> {
-
-
+                //ami tomake bhalo baashi
                 startActivity(new Intent(SplashScreen.this, MainActivity.class));
                 finish();
-            }, 3200);
+            }, 00);
 
 
         }
