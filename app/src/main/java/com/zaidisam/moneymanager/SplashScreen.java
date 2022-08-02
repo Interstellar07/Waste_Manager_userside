@@ -30,14 +30,14 @@ public class SplashScreen extends AppCompatActivity {
             new Handler().postDelayed(() -> {
                 startActivity(new Intent(SplashScreen.this, LoginActivity.class));
                 finish();
-            }, 00);
+            }, 2800);
         }
         else {
             new Handler().postDelayed(() -> {
                 //ami tomake bhalo baashi
                 startActivity(new Intent(SplashScreen.this, MainActivity.class));
                 finish();
-            }, 00);
+            }, 2800);
 
 
         }
