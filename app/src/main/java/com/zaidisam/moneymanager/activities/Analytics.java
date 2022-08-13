@@ -160,6 +160,7 @@ public class Analytics extends AppCompatActivity {
     }
 
     public void setmonth(MenuItem item) {
+
         System.out.println("TEST");
 
 
@@ -261,18 +262,21 @@ public class Analytics extends AppCompatActivity {
                         }
 
 
-                        Pie pie = AnyChart.pie();
+                        Pie pie1 = AnyChart.pie();
                         List<DataEntry> dataEntryList= new ArrayList<>();
                         for(int m=0;m<items.length;m++)
-                            dataEntryList.add(new ValueDataEntry(items[m],pieamount[m]));
-                        pie.data(dataEntryList);
-                        anyChartView.setChart(pie);
+                            dataEntryList.add(new ValueDataEntry(items[m],100));
+                        pie1.data(dataEntryList);
+                        anyChartView.setChart(pie1);
+
+
 
                         totalspent.setText("₹ "+String.valueOf(total));
                         totaltrnsport.setText("Spent: ₹ "+String.valueOf(trasnporttota));
                         food.setText("Spent: ₹ "+String.valueOf(foodtota));
                         apparel.setText("Spent: ₹ "+String.valueOf(apparelttl));
                         home.setText("Spent: ₹ "+String.valueOf(homettl));
+
 
                     }
 
