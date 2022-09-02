@@ -1,6 +1,5 @@
 # Money_Manager
-A Simple Money Manager Application which keeps track of your Expense and Income and shows Monthly report of Expendiutre.
-Used Firebase Authentication for User Sign In/SIng Up and Firebase Relatime-database for stroring User's Data.
+A budgeting programme that tracks your spending and income and provides a complete monthly report of expenses broken down by category.
 
 
 ![Screenshot_2022-07-13-17-56-22-94](https://user-images.githubusercontent.com/94633866/178734645-f19566e7-6de6-452e-8fda-03fa09546807.jpg)
