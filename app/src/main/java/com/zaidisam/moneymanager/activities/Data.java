@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class Data {
 
-    String wastetype, time, data, id, location, wastenature, date,status,imgurl;
+    String wastetype, time, data, id, location, wastenature, date,status,imgurl,S0;
     int amountwaste;
     int s1,s2,s3;
 
@@ -17,14 +17,15 @@ public class Data {
     }
 
 
-    public Data(String wastetype, String wastenature, String time, String data, String id, String location, int amountwaste,String status,String imgurl,int s1,int s2, int s3) {
+    public Data(String wastetype, String wastenature, String time, String data, String id, String location, int amountwaste,String status,String imgurl,int s1,int s2, int s3,String S0) {
         this.wastetype = wastetype;
         this.wastenature = wastenature;
         this.time = time;
         this.data = data;
         this.s1 = s1;
         this.s2 = s2;
-
+        this.s3 = s3;
+       this.S0 = S0;
         this.id = id;
         this.location = location;
         this.amountwaste = amountwaste;
@@ -103,6 +104,14 @@ public class Data {
 
     public void setImgurl(String imgurl) {
         this.imgurl = imgurl;
+    }
+
+    public String getS0() {
+        return S0;
+    }
+
+    public void setS0(String s0) {
+        S0 = s0;
     }
 
     public int getAmountwaste() {

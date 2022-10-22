@@ -117,6 +117,7 @@ import java.util.Calendar;
         budgetref= FirebaseDatabase.getInstance().getReference().child("Waste Generations").child(mAuth.getCurrentUser().getUid());
 
 
+
 //        budgetref.addValueEventListener(new ValueEventListener() {
 //            @Override
 //            public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -221,7 +222,7 @@ import java.util.Calendar;
                     DateTime now = new DateTime();
                     Months months = Months.monthsBetween(epoch,now);
 
-                    Data data = new Data(Item,Item2,timetxt,date,id,locationtxt,Integer.parseInt(budgeamount),status,imgurl,1,0,0);
+                    Data data = new Data(Item,Item2,timetxt,date,id,locationtxt,Integer.parseInt(budgeamount),status,imgurl,1,0,0,mAuth.getCurrentUser().getUid());
 
                     budgetref.child(id).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
@@ -243,7 +244,7 @@ import java.util.Calendar;
                                                     dialog.dismiss();
                                                     uploaded = false;
                                                     imgurl = uri.toString();
-                                                    Data data = new Data(Item,Item2,timetxt,date,id,locationtxt,Integer.parseInt(budgeamount),status,imgurl,1,0,0);
+                                                    Data data = new Data(Item,Item2,timetxt,date,id,locationtxt,Integer.parseInt(budgeamount),status,imgurl,1,0,0,mAuth.getCurrentUser().getUid());
                                                     budgetref.child(id).setValue(data);
                                                     dtb.child(id).setValue(data);
 
@@ -689,11 +690,5 @@ import java.util.Calendar;
 
         }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.menu_options,menu);
-        return true;
-    }
 
 }
