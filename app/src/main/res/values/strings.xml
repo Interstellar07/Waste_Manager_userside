@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Money Manager</string>
+    <string name="app_name">Waste Management</string>
 
     <string-array name="items">
         <item>Select Type</item>
@@ -43,9 +43,42 @@
 
     </string-array>
     <string-array name="type">
-        <item>Select Type</item>
-        <item>Income</item>
-        <item>Expense</item>
+        <item>Select Waste Type</item>
+        <item>Industrial Waste</item>
+        <item>Commercial  Waste</item>
+        <item>Domestic Waste</item>
+        <item>Agricultural Waste</item>
+        <item>Chemical waste</item>
+
+
+
+
+
+
+    </string-array>
+    <string-array name="nature">
+        <item>Select Waste Nature</item>
+        <item>Solid wastes</item>
+        <item>Solid wastes</item>
+        <item>Gaseous wastes</item>
+
+
+
+
+
+
+
+    </string-array>
+    <string-array name="location">
+        <item>Select Location</item>
+        <item>Guest House</item>
+        <item>Library</item>
+        <item>New Gallery</item>
+        <item>Sports Complex</item>
+
+
+
+
 
 
 

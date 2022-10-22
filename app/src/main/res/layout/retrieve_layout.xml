@@ -23,32 +23,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
-                android:text="item name"
+                android:text="Username"
                 android:layout_marginLeft="5dp"
                 android:fontFamily="@font/quicksand"
                 android:textStyle="bold"
-                android:textSize="16sp"
-                android:id="@+id/item"/>
+                android:textSize="12sp"
+                android:id="@+id/Username"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0$"
+                android:text="Waste Type"
                 android:layout_marginLeft="5dp"
                 android:fontFamily="@font/quicksand"
                 android:textColor="#000"
                 android:textStyle="bold"
-                android:textSize="14sp"
-                android:id="@+id/amount"/>
+                android:textSize="12sp"
+                android:id="@+id/Rtvwsttype"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="note"
+                android:text="Waste Nature"
                 android:layout_marginLeft="5dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/quicksand"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 android:textColor="#000"
-                android:id="@+id/note"/>
+                android:id="@+id/rtvwstnature"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -57,8 +57,18 @@
                 android:fontFamily="@font/quicksand"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 android:id="@+id/date"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:textColor="#000"
+                android:fontFamily="@font/quicksand"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:id="@+id/status"/>
 
 
 
@@ -67,12 +77,11 @@
 
         <ImageView
             android:id="@+id/imageview"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
             android:layout_toEndOf="@+id/linearLayout"
             android:src="@drawable/incoming">
 

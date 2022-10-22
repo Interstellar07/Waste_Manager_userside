@@ -8,118 +8,119 @@
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="20dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/coordinator"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.661">
+    <!--   <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_margin="20dp"
+         app:cardCornerRadius="15dp"
+         app:layout_constraintBottom_toTopOf="@+id/coordinator"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="@+id/toolbar"
+         app:layout_constraintVertical_bias="0.661">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+       <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
 
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Balance: "
-                android:layout_marginLeft="15dp"
-                android:gravity="center"
-                android:fontFamily="@font/quicksand"
-                android:textStyle="bold"
-                android:id="@+id/saving"
-                android:textSize="25sp"
-                android:textColor="#000"/>
-        </LinearLayout>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:text="Balance: "
+                 android:layout_marginLeft="15dp"
+                 android:gravity="center"
+                 android:fontFamily="@font/quicksand"
+                 android:textStyle="bold"
+                 android:id="@+id/saving"
+                 android:textSize="25sp"
+                 android:textColor="#000"/>
+         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:id="@+id/coordinator"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/table"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+     </androidx.cardview.widget.CardView>
+     -->
+     <androidx.coordinatorlayout.widget.CoordinatorLayout
+         android:id="@+id/coordinator"
+         android:layout_width="match_parent"
+         android:layout_height="200dp"
+         android:layout_below="@+id/table"
+         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
-        <GridLayout
-            android:id="@+id/gridLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp"
-            android:columnCount="2"
-            android:rowCount="1">
+         <GridLayout
+             android:id="@+id/gridLayout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="20dp"
+             android:layout_marginRight="20dp"
+             android:layout_marginBottom="20dp"
+             android:columnCount="2"
+             android:rowCount="1">
 
+          <!--   <androidx.cardview.widget.CardView
+                 android:id="@+id/expenseCardView"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_row="0"
+                 android:layout_rowWeight="1"
+                 android:layout_column="0"
+                 android:layout_columnWeight="1"
+                 android:layout_gravity="fill"
+                 android:layout_margin="8dp"
+                 android:background="#fff"
+                 app:cardCornerRadius="30dp">
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center_vertical|center_horizontal"
+                     android:gravity="center"
+                     android:orientation="vertical">
+
+                     <ImageView
+                         android:layout_width="64dp"
+                         android:layout_height="61dp"
+                         android:src="@drawable/expense" />
+                     <TextView
+                         android:layout_gravity="center"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:fontFamily="@font/quicksand"
+                         android:gravity="center"
+                         android:text="Expense "
+                         android:textColor="#000"
+                         android:textSize="20dp"
+                         android:textStyle="bold"
+
+                         />
+
+                     <TextView
+                         android:id="@+id/expense"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="@font/quicksand"
+                         android:gravity="center"
+                         android:text=""
+                         android:textColor="#CD3E3E"
+                         android:textSize="20dp"
+                         android:textStyle="bold"
+
+                         />
+
+
+                 </LinearLayout>
+
+             </androidx.cardview.widget.CardView>
+ -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/expenseCardView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_rowWeight="1"
-                android:layout_column="0"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:layout_margin="8dp"
-                android:background="#fff"
-                app:cardCornerRadius="30dp">
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="61dp"
-                        android:src="@drawable/expense" />
-                    <TextView
-                        android:layout_gravity="center"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/quicksand"
-                        android:gravity="center"
-                        android:text="Expense "
-                        android:textColor="#000"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-
-                        />
-
-                    <TextView
-                        android:id="@+id/expense"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/quicksand"
-                        android:gravity="center"
-                        android:text=""
-                        android:textColor="#CD3E3E"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-
-                        />
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-
-                android:id="@+id/SalaryCardView"
+                android:id="@+id/WasteCardView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="0"
@@ -142,7 +143,7 @@
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="61dp"
-                        android:src="@drawable/salary" />
+                        android:src="@drawable/garbage" />
                     <TextView
 
                         android:layout_width="match_parent"
@@ -150,7 +151,7 @@
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/quicksand"
                         android:gravity="center"
-                        android:text="Salary"
+                        android:text="Upload New Waste"
                         android:layout_gravity="center"
                         android:textColor="#000"
                         android:textSize="20dp"
@@ -184,7 +185,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
-        tools:layout_editor_absoluteY="376dp">
+        >
 
 
         <TextView
@@ -192,7 +193,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/quicksand"
             android:gravity="center"
-            android:text="Latest Transactions:"
+            android:text="Your Old Requests:"
             android:textColor="#000"
             android:textSize="18dp"
             android:textStyle="bold"
@@ -205,7 +206,7 @@
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
 
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

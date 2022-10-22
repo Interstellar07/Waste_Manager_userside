@@ -1,39 +1,52 @@
 package com.zaidisam.moneymanager.activities;
 
-public class Data {
-    String item ,data , id,notes,type , month;
-    int amount ;
+import android.location.Location;
 
-    public Data()
-    {
+import com.airbnb.lottie.L;
+
+import java.util.Date;
+
+public class Data {
+
+    String wastetype, time, data, id, location, wastenature, date,status,imgurl;
+    int amountwaste;
+    int s1,s2,s3;
+
+    public Data() {
 
     }
 
-    public Data(String type,String item, String data, String id, String notes, int amount, String month) {
-        this.type = type;
-        this.item = item;
 
+    public Data(String wastetype, String wastenature, String time, String data, String id, String location, int amountwaste,String status,String imgurl,int s1,int s2, int s3) {
+        this.wastetype = wastetype;
+        this.wastenature = wastenature;
+        this.time = time;
         this.data = data;
+        this.s1 = s1;
+        this.s2 = s2;
 
         this.id = id;
-        this.notes = notes;
-        this.amount = amount;
-        this.month = month;
-    }
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type= type;
+        this.location = location;
+        this.amountwaste = amountwaste;
+        this.date = date;
+        this.status = status;
+        this.imgurl = imgurl;
     }
 
-    public String getItem() {
-        return item;
+    public String getWastetype() {
+        return wastetype;
     }
 
-    public void setItem(String item) {
-        this.item = item;
+    public void setWastetype(String wastetype) {
+        this.wastetype = wastetype;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 
     public String getData() {
@@ -52,27 +65,75 @@ public class Data {
         this.id = id;
     }
 
-    public String getNotes() {
-        return notes;
+    public String getLocation() {
+        return location;
     }
 
-    public void setNotes(String notes) {
-        this.notes = notes;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
-    public int getAmount() {
-        return amount;
+    public String getWastenature() {
+        return wastenature;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void setWastenature(String wastenature) {
+        this.wastenature = wastenature;
     }
 
-    public String getMonth() {
-        return month;
+    public String getDate() {
+        return date;
     }
 
-    public void setMonth(String month) {
-        this.month = month;
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getImgurl() {
+        return imgurl;
+    }
+
+    public void setImgurl(String imgurl) {
+        this.imgurl = imgurl;
+    }
+
+    public int getAmountwaste() {
+        return amountwaste;
+    }
+
+    public void setAmountwaste(int amountwaste) {
+        this.amountwaste = amountwaste;
+    }
+
+    public int getS1() {
+        return s1;
+    }
+
+    public void setS1(int s1) {
+        this.s1 = s1;
+    }
+
+    public int getS2() {
+        return s2;
+    }
+
+    public void setS2(int s2) {
+        this.s2 = s2;
+    }
+
+    public int getS3() {
+        return s3;
+    }
+
+    public void setS3(int s3) {
+        this.s3 = s3;
     }
 }
