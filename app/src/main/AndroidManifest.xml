@@ -11,9 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoneyManager">
         <activity
-            android:name=".activities.Analytics"
-            android:exported="false" />
-        <activity
             android:name=".activities.MainActivity"
             android:exported="false" />
         <activity

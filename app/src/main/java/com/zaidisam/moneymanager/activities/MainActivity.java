@@ -577,19 +577,7 @@ import java.util.Calendar;
 
     }
 
-    public void Activitymet(MenuItem item) {
-        progressDialog.setMessage("Loading Month Report");
-        progressDialog.setCanceledOnTouchOutside(false);
-        progressDialog.show();
-        new Handler().postDelayed(() -> {
 
-
-            startActivity(new Intent(MainActivity.this,Analytics.class));
-            progressDialog.dismiss();
-        }, 700);
-
-
-    }
 
     public void erasedata(MenuItem item) {
 
