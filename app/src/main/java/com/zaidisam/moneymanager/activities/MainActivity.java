@@ -651,7 +651,7 @@ import java.util.Calendar;
 
             mView= itemView;
             imageView= itemView.findViewById(R.id.imageview);
-            notes = itemView.findViewById(R.id.note);
+
 
         }
         public void setWastetype(String itemName)
